@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#b1").click(function() {
+		$("p").prepend("<b>New Content</b>");
+});
+
+	$("#b2").click(function() {
+		$("ul").prepend("<li> sugar</li>");
+});
+	
+});
+
+function apptxt()
+{
+var t1 = "<p>HTML using JQuery</p>";
+$("body").prepend(t1);
+}
+</script>
+
+</head>
+<body>
+<p >First paragraph</p>
+<p >Second paragraph</p>
+<ul>
+<li> tea</li>
+<li> cofee</li>
+</ul>
+<button id = "b1"> prepend text </button>
+<button id = "b2"> prepend list </button>
+<button onclick ="apptxt()">PREPEND</button>
+</body>
+</html>
+
+

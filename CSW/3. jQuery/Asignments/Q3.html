@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+<style>
+#box{
+	width:200px;
+	height:100px;
+	background-color:lightblue;
+	border:2px solid black;
+	margin:20px;
+	
+}
+</style>
+
+
+<script>
+$(document).ready(function(){
+	var aRun = false;
+	var animation;
+	$("#b1").click(function() {
+		if(!aRun) {
+			aRun = true;
+			animation = $("#box").animate({
+				width:'400px'
+			}, 2000);
+		}
+	});
+	$("#b2").click(function() {
+		if(aRun){
+			$("#box").stop(true).width($("#box").width());
+		}
+
+	});	
+});
+
+
+
+</script>
+
+
+</head>
+<body>
+
+<div id="box">
+
+</div>
+
+<button id = "b1"> Start </button>
+<button id = "b2"> Stop </button>
+
+
+
+
+</body>
+</html>

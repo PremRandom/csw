@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#b1").click(function() {
+		$("#par").text("hi user");
+});
+
+	$("#b2").click(function() {
+		$("#par").html("<b>Hi User</b>");
+});
+	$("#b3").click(function() {
+		$("#txt input").val("AD1");
+});
+	$("#b4").click(function() {
+		$("#go").attr("href","https://www.gmail.com/");
+});
+	
+});
+
+</script>
+
+</head>
+<body>
+<p id="par"><b>paragraph1</b></p>
+<p id = "txt"> Name:<input type = "text" id = "text" value = "CSW"></p>
+<button id = "b1"> set text </button>
+<button id = "b2"> set html </button>
+<button id = "b3"> set value </button>
+<p> <a href = "https://www.google.com" id = "go">GOOGLE</a></p>
+<button id = "b4">Click to Change HREF </button>
+</body>
+</html>
+
+

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#b1").click(function() {
+		alert("Text:" +$("#par").text());
+});
+
+	$("#b2").click(function() {
+		alert("HTML:" +$("#par").html());
+});
+	$("#b3").click(function() {
+		alert("value:" +$("#txt input").val());
+});
+	$("#b4").click(function() {
+		alert($("#go").attr("href"));
+});
+});
+
+</script>
+
+</head>
+<body>
+<p id="par"><b>paragraph1</b></p>
+<p id = "txt"> Name:<input type = "text" id = "text" value = "CSW"></p>
+<button id = "b1"> Display text </button>
+<button id = "b2"> Display html </button>
+<button id = "b3"> Display value </button>
+<p> <a href = "https://www.google.com" id = "go">GOOGLE</a></p>
+<button id = "b4">Click to know HREF </button>
+</body>
+</html>
+
+

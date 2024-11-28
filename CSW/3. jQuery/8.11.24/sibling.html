@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#b1").click(function() {
+		$("h2").siblings().css({"color":"blue","border":"2px solid black"});
+	});
+	$("#b2").click(function() {
+		$("h2").next().css({"color":"blue","border":"2px solid black"});
+	});
+	$("#b3").click(function() {
+		$("h2").nextAll().css({"color":"blue","border":"2px solid black"});
+	});
+	$("#b4").click(function() {
+		$("h2").nextUntil("h5").css({"color":"blue","border":"2px solid black"});
+	});
+	$("#b5").click(function() {
+		$("h2").prev().css({"color":"blue","border":"2px solid black"});
+	});
+	$("#b6").click(function() {
+		$("h2").prevAll().css({"color":"blue","border":"2px solid black"});
+	});
+	$("#b7").click(function() {
+		$("h2").prevUntil("h5").css({"color":"blue","border":"2px solid black"});
+	});
+
+
+
+
+});
+
+</script>
+
+<style>
+
+.s *{
+display:block;
+border:2px solid lightgrey;
+color:green;
+padding:2px;
+margin: 20px;
+}
+</style>
+
+</head>
+
+<body class = "s">
+
+<div> div
+<p>p</p>
+<span> span </span>
+<h1> H1</h1>
+<h2> H2</h2>
+<h3> H3</h3>
+<h4> H4</h4>
+<h5> H5</h5>
+<h6> H6</h6>
+
+</div>
+
+<button id = "b1"> Sibling</button>
+<button id = "b2"> next</button>
+<button id = "b3"> nextAll</button>
+<button id = "b4"> NextUntil</button>
+<button id = "b5"> prev</button>
+<button id = "b6"> prevAll</button>
+<button id = "b7"> prevUntil</button>
+
+
+</body>
+</html>
+
+

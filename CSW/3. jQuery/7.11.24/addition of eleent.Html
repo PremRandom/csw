@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#b1").click(function() {
+		$("p").append("<b>New Content</b>");
+});
+
+	$("#b2").click(function() {
+		$("ul").append("<li> sugar</li>");
+});
+	
+});
+
+</script>
+
+</head>
+<body>
+<p >First paragraph</p>
+<p >Second paragraph</p>
+<ul>
+<li> tea</li>
+<li> cofee</li>
+</ul>
+<button id = "b1"> Append text </button>
+<button id = "b2"> append list </button>
+
+</body>
+</html>
+
+

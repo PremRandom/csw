@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$("#b1").click(function() {
+		alert("Text:" +$("#par").text());
+	});
+
+	$("#b2").click(function() {
+		alert("HTML:" +$("#div1").html());
+	});
+});
+</script>
+
+</head>
+<body >
+<div id="div1">
+<p id="par">Random Sample Text<p>
+</div>
+<button id = "b1"> Fetch Text </button>
+<button id = "b2"> Fetch HTML </button>
+</body>
+</html>
